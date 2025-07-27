@@ -1,21 +1,31 @@
-import axios from 'axios';
+// services/api.ts
+import * as FileSystem from 'expo-file-system';
 
-const API_URL = 'http://<YOUR-BACKEND-IP>:8000/analyze';
+export const analyzeContract = async (file: any): Promise<any> => {
+  const uri = file.uri;
+  const filename = file.name || uri.split('/').pop();
+  const fileType = file.mimeType || 'application/octet-stream';
 
-export const analyzeContract = async (file: any) => {
   const formData = new FormData();
-
   formData.append('file', {
-    uri: file.uri,
-    name: file.name,
-    type: file.mimeType || 'application/pdf',
+    uri,
+    name: filename,
+    type: fileType,
   } as any);
 
-  const response = await axios.post(API_URL, formData, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+const response = await fetch('http://192.168.100.42:8000/analyze', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'multipart/form-data',
+  },
+  body: formData,
+});
 
-  return response.data;
+
+  if (!response.ok) {
+    throw new Error('Failed to analyze contract');
+  }
+
+  const json = await response.json();
+  return json.clauses; 
 };
