@@ -1,23 +1,23 @@
-# 📄 ContractIQ – AI-Powered Contract Intelligence App
+#  ContractIQ – AI-Powered Contract Intelligence App
 
 ContractIQ is a mobile app built with **React Native (Expo)** that enables users to upload legal contracts (PDF/DOCX), extract key clauses using **OpenAI GPT**, and get risk analysis for terms like indemnity, auto-renewal, and penalties.
 
-> 🎯 Perfect for legal teams, business owners, and professionals who need to analyze contracts quickly and on-the-go.
+>  Perfect for legal teams, business owners, and professionals who need to analyze contracts quickly and on-the-go.
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 📤 Upload PDF/DOCX contracts from your mobile device
-- 🧠 AI summarization and clause extraction using OpenAI GPT
-- ⚠️ Risk detection for sensitive clauses
-- 🗂 Save and view analysis history
-- 🔐 Firebase Authentication (optional)
-- 🌍 Backend API for document parsing and OpenAI integration
+-  Upload PDF/DOCX contracts from your mobile device
+-  AI summarization and clause extraction using OpenAI GPT
+-  Risk detection for sensitive clauses
+-  Save and view analysis history
+-  Firebase Authentication (optional)
+-  Backend API for document parsing and OpenAI integration
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 ### Mobile App
 - **React Native (Expo)**
@@ -34,12 +34,12 @@ ContractIQ is a mobile app built with **React Native (Expo)** that enables users
 
 ---
 
-## 📸 Screenshots (TBD)
+## Screenshots (TBD)
 *Coming soon*
 
 ---
 
-## 📦 Installation
+##  Installation
 
 1. Clone the repo
 
