@@ -27,7 +27,7 @@ ContractIQ is a mobile app built with **React Native (Expo)** that enables users
 - **Tailwind-RN** or styled-components (UI)
 
 ### Backend
-- **Node.js + Express** or **Python + FastAPI**
+- **Python + FastAPI**
 - **OpenAI GPT-4 API**
 - **Firebase Storage / AWS S3** (for file uploads)
 - **PostgreSQL** or **Firebase Firestore** (data storage)
